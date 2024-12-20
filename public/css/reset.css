@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+@import url(./fonts/Notosanskr.css);
+@import url(./fonts/pretendard.css);
+
+/* 변수사용 */
+:root{
+    --mainColor : #005689;
+    --subColor : #1391C1;
+    --blackColor : #000000;
+    --textColor : #727C83;
+    --iconColor : #949CA3;
+}
+
+
+/* basic_start */
+*					      { box-sizing: border-box; -webkit-box-sizing: border-box; padding:0px; margin:0px; }
+html            { font-size: 10px; overflow: hidden;}
+body            { font-family:"pretendard", "Noto Sans KR", "Malgun Gothic", "맑은 고딕" ,helvetica, 'Dotum', "Apple SD Gothic Neo", sans-serif; font-size:1.4rem; letter-spacing: -0.015em; color:var(--textColor); word-wrap: break-word; word-break: keep-all;}
+body.noscroll		{ position: fixed; top:0px; left:0px; right:0px; bottom:0px; }
+
+
+/* - 코드 초기화 - */
+div,p, span, h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,form,fieldset,input,button,select, textarea, th, td, img {border:0px; outline: none; }
+ul,ol,li,dl,dt,dd   { list-style:none;}
+table {border-collapse:collapse; border-spacing:0; table-layout: fixed;}
+input:not(input[type=range]), textarea, button, select {-webkit-appearance:none; -moz-appearance:none; appearance:none; outline: none;-webkit-border-radius:0; -moz-border-radius:0; -o-border-radius:0; border-radius:0;background: transparent; resize: none; font-family:"pretendard", "Noto Sans KR", "Malgun Gothic", "맑은 고딕" ,helvetica, 'Dotum', "Apple SD Gothic Neo", sans-serif; font-size:1.6rem;}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+::-webkit-input-placeholder { color: #bbb; }
+:-ms-input-placeholder { color: #bbb; }
+::placeholder { color: #bbb; }
+
+a                   { text-decoration:none; color:#111; outline:none; }
+a:visited           { color:#111; }
+a:active            { color:#111; }
+a:hover             { color:#111; text-decoration:none; }
+img {display:inline-block;}
+article, aside, figcaption, figure,
+footer, header, nav, section {display: block;}
+button{cursor:pointer;}
+
+caption{width:0;height:0;font-size:0;line-height:0;overflow:hidden;visibility:hidden;}
+legend{width:0;height:0;font-size:0;line-height:0;overflow:hidden;visibility:hidden;}
+/* - @코드 초기화 - */
