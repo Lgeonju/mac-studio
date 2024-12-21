@@ -1,0 +1,31 @@
+.sectionContent{
+    width:100%;
+    max-width: 102.4rem;
+    padding:0 20px;
+    margin:0 auto;
+}
+
+.mainSection2 {
+    overflow-x: hidden;
+    > .sectionContent {display:flex; flex-direction: column; align-items: center;}
+    > .sectionContent > .introCopy{padding:20rem 0; display: inline-block; max-width:82.5rem;}
+    > .sectionContent > .introCopy > p{font-size:4rem; font-weight:600; margin-bottom:4rem; line-height: 1.3;}
+
+    > .sectionContent > .content{background:#fafafa; border-radius: 30px 30px 0 0; display: flex; flex-direction: column; align-items: center; overflow:hidden; width:140%;}
+    > .sectionContent > .content > .textArea{display: inline-block; max-width:82.5rem; margin:10rem 0;}
+    > .sectionContent > .content > .textArea > .tit{display:inline-block; font-size:9.6rem; font-weight:700; -webkit-text-fill-color: transparent; background-clip: text; background-image: linear-gradient(35deg, #D676EB 30%, #8227FF 70%);}
+    > .sectionContent > .content > .textArea > p{font-size:2.8rem; font-weight:600; margin-top:20px;}
+    > .sectionContent > .content > .textArea > ul{display:flex; align-items: center; gap:8.5rem; margin-top:20px;}
+    > .sectionContent > .content > .textArea > ul > li > span{font-size:17px; font-weight:600; color:#86868b;}
+    > .sectionContent > .content > .textArea > ul > li > span > sup{font-size:8px;}
+    > .sectionContent > .content > .textArea > ul > li > p{font-size:6.4rem; font-weight:600; margin:2px 0;}
+    
+    > .sectionContent > .content > .videoWrap{width:100dvw; height:100dvh; overflow:hidden; position:relative;}
+    > .sectionContent > .content > .videoWrap > video{width:100%; height:100%; object-fit: cover;}
+    > .sectionContent > .content > .videoWrap::after{position:absolute; content:''; display: inline-block; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.3);}
+
+    > .sectionContent > .content > .videoWrap > ul{position:absolute; max-width:82.5rem; width: 100%; top:10px; left:50%; transform:translate(-50%, 0); z-index: 1;}
+    > .sectionContent > .content > .videoWrap > ul > li{font-size:2.8rem; font-weight:600; color:#fff; display:flex; align-items: start; gap:20px;}
+    > .sectionContent > .content > .videoWrap > ul > li::before{content:''; display:inline-block; width:5px; height:2rem; background:#fff; margin-top:6px;}
+    > .sectionContent > .content > .videoWrap > ul > li + li{margin-top:5.8rem;}
+}

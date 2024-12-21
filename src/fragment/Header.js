@@ -1,5 +1,5 @@
 import {Link} from 'react-router-dom';
-import '../scss/header.scss'
+import '../scss/header.scss';
 
 function Header() {
     return (

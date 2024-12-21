@@ -2,21 +2,13 @@
 
 @import url(./fonts/Notosanskr.css);
 @import url(./fonts/pretendard.css);
-
-/* 변수사용 */
-:root{
-    --mainColor : #005689;
-    --subColor : #1391C1;
-    --blackColor : #000000;
-    --textColor : #727C83;
-    --iconColor : #949CA3;
-}
+@import url(./icons/xi/xeicon.min.css);
 
 
 /* basic_start */
 *					      { box-sizing: border-box; -webkit-box-sizing: border-box; padding:0px; margin:0px; }
-html            { font-size: 10px; overflow: hidden;}
-body            { font-family:"pretendard", "Noto Sans KR", "Malgun Gothic", "맑은 고딕" ,helvetica, 'Dotum', "Apple SD Gothic Neo", sans-serif; font-size:1.4rem; letter-spacing: -0.015em; color:var(--textColor); word-wrap: break-word; word-break: keep-all;}
+html            { font-size: 10px;}
+body            { font-family:"pretendard", "Noto Sans KR", "Malgun Gothic", "맑은 고딕" ,helvetica, 'Dotum', "Apple SD Gothic Neo", sans-serif; font-size:1.4rem; letter-spacing: -0.015em; color:#1d1d1f; word-wrap: break-word; word-break: keep-all;}
 body.noscroll		{ position: fixed; top:0px; left:0px; right:0px; bottom:0px; }
 
 
@@ -34,10 +26,10 @@ input::-webkit-inner-spin-button {
 :-ms-input-placeholder { color: #bbb; }
 ::placeholder { color: #bbb; }
 
-a                   { text-decoration:none; color:#111; outline:none; }
-a:visited           { color:#111; }
-a:active            { color:#111; }
-a:hover             { color:#111; text-decoration:none; }
+a                   { text-decoration:none; color:#1d1d1f; outline:none; }
+a:visited           { color:#1d1d1f; }
+a:active            { color:#1d1d1f; }
+a:hover             { color:#1d1d1f; text-decoration:none; }
 img {display:inline-block;}
 article, aside, figcaption, figure,
 footer, header, nav, section {display: block;}

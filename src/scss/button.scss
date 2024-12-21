@@ -1,0 +1,16 @@
+.roundIconBtn{
+    padding:14px 16px;
+    border:2px solid #1d1d1f;
+    border-radius:40px;
+    font-size:2rem;
+    font-weight:600;
+    display:flex;
+    align-items: center;
+    gap:10px;
+    background-color:#fff;
+    color:#1d1d1f;
+    transition:background-color 350ms ease-in-out,color 350ms ease-in-out;
+    > .xi{width:20px; font-weight: 600; height:20px; border-radius: 50%; display:flex; align-items: center; justify-content:center; border:2px solid #1d1d1f; color:#1d1d1f; font-size:12px; transition:border-color 350ms ease-in-out,color 350ms ease-in-out;}
+    &:hover{transition:background-color 350ms ease-in-out,color 350ms ease-in-out; background-color:#1d1d1f; color:#fff;}
+    &:hover > .xi{color:#fff; border-color:#fff; transition:border-color 350ms ease-in-out,color 350ms ease-in-out;} 
+}
