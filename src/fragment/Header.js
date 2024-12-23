@@ -10,7 +10,7 @@ function Header() {
                 <nav>
                     <ul>
                         <li><Link to="/">개요</Link></li>
-                        <li><Link to="/">제품사양</Link></li>
+                        <li><Link to="/test">제품사양</Link></li>
                     </ul>
                 </nav>
             </div>

@@ -14,7 +14,7 @@ function MainSection1(){
             scrollTrigger: {
             trigger: ".mainSection1",
             start: "top top",
-            end:"bottom top",
+            end:"+=3000",
             pin:true,
             pinSpacing:true,
             markers:false, //가상으로 스크롤이벤트 범위를 보여줌
@@ -29,7 +29,9 @@ function MainSection1(){
             <div className="sectionContent">
                 <div className="introCopy">
                     <p className="s">Mac Studio</p>
-                    <p className="m">강력함의 집약체.</p>
+                    <div className="mTextArea">
+                        <p className="m">강력함의 집약체.</p>
+                    </div>
                 </div>
                 <div className="imgAni">
                     <img src={`${process.env.PUBLIC_URL}/images/hero/0000.jpg`} alt=""/>

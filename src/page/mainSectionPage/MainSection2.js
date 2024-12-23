@@ -39,12 +39,13 @@ function MainSection2(){
   
       /* 첫번째 컨텐츠 스크롤 텍스트 애니 */
       const con1_scrollText = gsap.timeline();
-      con1_scrollText.from(".mainSection2 .content .scrollAni > .scrollText", {bottom:"-20%"})
+      con1_scrollText.from(".mainSection2 .content .scrollAni > .scrollText", {bottom:"-15%"})
   
       ScrollTrigger.create({
         animation: con1_scrollText,
         trigger: '.mainSection2 .content .scrollAni',
         start: 'top top',
+        end:"+=2000",
         pin:true,
         pinSpacing:true,
         markers:false,
@@ -57,9 +58,9 @@ function MainSection2(){
       let con1_textAni = gsap.timeline({
         scrollTrigger: {
           trigger: ".mainSection2 .content .scrollAni",
-          start: "top top",
-          end:"+=200",
-          markers:false,
+          start: "-=20",
+          end:"+=1000",
+          markers:true,
           scrub:true,
         }
       });
