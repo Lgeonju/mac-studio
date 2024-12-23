@@ -26,13 +26,13 @@ function MainSection3(){
     
       const tabClick = (e) => {
         // 현재 클릭된 노드
-        const currentNode = e.currentTarget;
+        let currentNode = e.currentTarget;
     
         // 부모 노드
-        const parentNode = currentNode.parentNode;
+        let parentNode = currentNode.parentNode;
     
         // 형제 노드 선택
-        const siblings = Array.from(parentNode.children).filter(
+        let siblings = Array.from(parentNode.children).filter(
           (child) => child !== currentNode
         );
     

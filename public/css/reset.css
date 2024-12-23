@@ -26,14 +26,14 @@ input::-webkit-inner-spin-button {
 :-ms-input-placeholder { color: #bbb; }
 ::placeholder { color: #bbb; }
 
-a                   { text-decoration:none; color:#1d1d1f; outline:none; }
+a                   { text-decoration:none; color:#1d1d1f; outline:none; -webkit-tap-highlight-color: rgba(0,0,0,0);}
 a:visited           { color:#1d1d1f; }
 a:active            { color:#1d1d1f; }
 a:hover             { color:#1d1d1f; text-decoration:none; }
 img {display:inline-block;}
 article, aside, figcaption, figure,
 footer, header, nav, section {display: block;}
-button{cursor:pointer;}
+button{cursor:pointer; -webkit-tap-highlight-color: rgba(0,0,0,0);}
 
 caption{width:0;height:0;font-size:0;line-height:0;overflow:hidden;visibility:hidden;}
 legend{width:0;height:0;font-size:0;line-height:0;overflow:hidden;visibility:hidden;}

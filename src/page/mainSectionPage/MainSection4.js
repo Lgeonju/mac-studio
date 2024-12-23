@@ -8,9 +8,9 @@ function MainSection4(){
 
     useGSAP(()=>{
 
-        const images = document.querySelectorAll('.imgAni > img');
+        const main4_Images = document.querySelectorAll('.mainSection4 .imgAni > img');
   
-        let imagesAni = gsap.timeline({
+        let imagesAni2 = gsap.timeline({
             scrollTrigger: {
             trigger: ".mainSection4",
             start: "top top",
@@ -21,7 +21,7 @@ function MainSection4(){
             scrub:true,
             }
         });
-        imagesAni.to(images, {opacity:1, stagger:6, duration: 10});
+        imagesAni2.to(main4_Images, {opacity:1, stagger:6, duration: 10});
     });
 
     return(

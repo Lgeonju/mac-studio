@@ -1,0 +1,96 @@
+@media (max-width : 769px){
+    html{ font-size: 8px;}
+
+    .mainSection1 > .sectionContent > .imgAni{height:280.41px;}
+    .mainSection1 > .sectionContent{justify-content: center;}
+    .mainSection1 > .sectionContent > .introCopy{margin:0 0 20px !important;}
+    .mainSection1 > .sectionContent > .imgAni{margin-bottom:0px !important;}
+    .mainSection3 > .sectionContent > .content > .introLink > button{text-decoration: none !important;}
+}
+
+@media (max-width : 571px){
+    html{ font-size: 6px;}
+
+    header,
+    header > .headerInner{height:40px !important;}
+    header > .headerInner > h1{font-size:16px !important;}
+
+    .mainSection1 > .sectionContent > .imgAni{height:204.14px;}
+
+    .mainSection2 > .sectionContent > .introCopy > p{font-size:20px !important;}
+
+    .mainSection2 > .sectionContent > .content > .textArea > .tit{font-size:50px !important;}
+    .mainSection2 > .sectionContent > .content > .textArea > p{font-size:15px !important;}
+    .mainSection2 > .sectionContent > .content > .textArea > ul > li > span{font-size:15px !important;}
+    .mainSection2 > .sectionContent > .content > .textArea > ul > li > p{font-size:30px !important;}
+
+    .mainSection2 > .sectionContent > .content2 > .textArea > .tit{font-size:50px !important;}
+    .mainSection2 > .sectionContent > .content2 > .textArea > p{font-size:15px !important;}
+    .mainSection2 > .sectionContent > .content2 > .textArea > ul > li > span{font-size:15px !important;}
+    .mainSection2 > .sectionContent > .content2 > .textArea > ul > li > p{font-size:30px !important;}
+
+    .mainSection3 > .sectionContent > .introCopy{font-size:50px !important; padding:40px 20px !important; width:auto  !important;}
+    .mainSection3 > .sectionContent > .content > .introLink{gap:5px 0;}
+    .mainSection3 > .sectionContent > .content > .introLink > button{font-size:20px !important;}
+    .mainSection3 > .sectionContent > .content > .introLink > button:not(:last-of-type)::after{margin:0 10px !important; font-size:20px !important;}
+    .mainSection3 > .sectionContent > .content{padding:25px 30px !important;}
+    .mainSection3 > .sectionContent > .content > .graphTit{font-size:20px !important;}
+    .mainSection3 > .sectionContent > .content > .graphList > li > .graphWrap{width:calc(100% - 90px) !important;}
+
+    .mainSection4 > .sectionContent > .introCopy{font-size:50px !important;}
+    .mainSection4 > .sectionContent{justify-content: center !important;}
+    .mainSection4 > .sectionContent > .introCopy{margin:0 0 20px !important;}
+    .mainSection4 > .sectionContent > .imgAni{height:218.08px !important;}
+
+    .mainSection5 > .sectionContent > .introCopy{font-size:50px !important; margin-bottom:20px !important;}
+    .mainSection5 > .sectionContent > .imgText{font-size:13px !important; margin-bottom:40px !important;}
+    .mainSection5 > .sectionContent > p{font-size:15px !important;}
+
+    .mainSection6 > .sectionContent > .introCopy{margin:40px 20px !important; width:auto  !important;}
+    .mainSection6 > .sectionContent > .introCopy > .m{font-size:50px !important;}
+    .mainSection6 > .sectionContent > .introCopy > .s{font-size:15px !important;}
+
+}
+
+@media (max-width : 426px){
+    .mainSection1 > .sectionContent > .introCopy > .s{font-size:20px !important;}
+    .mainSection1 > .sectionContent > .introCopy > .mTextArea > .m{font-size:40px !important;}
+    .mainSection1 > .sectionContent > .imgAni{height:148.28px !important;}
+
+    .mainSection2 > .sectionContent > .introCopy > p{font-size:15px !important;}
+    .roundIconBtn{padding: 10px 15px !important; border-radius: 30px !important;}
+
+    .mainSection2 > .sectionContent > .content > .textArea{max-width:300px !important;}
+    .mainSection2 > .sectionContent > .content > .textArea > .tit{font-size:40px !important;}
+    .mainSection2 > .sectionContent > .content > .textArea > ul{gap:20px !important;}
+    .mainSection2 > .sectionContent > .content > .textArea > ul > li > span{font-size:13px !important;}
+    .mainSection2 > .sectionContent > .content > .textArea > ul > li > p{font-size:20px !important;}
+    .mainSection2 > .sectionContent > .content > .textArea > ul > li > span:last-of-type{display:none !important;}
+    .mainSection2 > .sectionContent > .content .videoWrap > ul{max-width: 300px !important;}
+
+    .mainSection2 > .sectionContent > .content2 > .textArea{max-width:300px !important;}
+    .mainSection2 > .sectionContent > .content2 > .textArea > .tit{font-size:40px !important;}
+    .mainSection2 > .sectionContent > .content2 > .textArea > ul{gap:20px !important;}
+    .mainSection2 > .sectionContent > .content2 > .textArea > ul > li > span{font-size:13px !important;}
+    .mainSection2 > .sectionContent > .content2 > .textArea > ul > li > p{font-size:20px !important;}
+    .mainSection2 > .sectionContent > .content2 > .textArea > ul > li > span:last-of-type{display:none !important;}
+    .mainSection2 > .sectionContent > .content2 .videoWrap > ul{max-width: 300px !important;}
+
+    .mainSection3 > .sectionContent > .introCopy{font-size:40px !important;}
+
+    .mainSection3 > .sectionContent > .content > .introLink > button{font-size:15px !important;}
+    .mainSection3 > .sectionContent > .content > .introLink > button:not(:last-of-type)::after{margin:0 10px !important; font-size:15px !important;}
+    .mainSection3 > .sectionContent > .content > .graphTit{font-size:20px !important;}
+    .mainSection3 > .sectionContent > .content > .graphList > li > .graphWrap{width:calc(100% - 90px) !important;}
+
+    .mainSection4 > .sectionContent > .introCopy{font-size:40px !important;}
+    .mainSection4 > .sectionContent > .imgAni{height:188.25px !important;}
+
+    .mainSection5 > .sectionContent{padding:0 20px !important;}
+    .mainSection5 > .sectionContent > .introCopy{font-size:40px !important; margin-bottom:20px !important;}
+    .mainSection5 > .sectionContent > p{font-size:15px !important;}
+
+    .mainSection6 > .sectionContent > .introCopy > .m{font-size:40px !important;}
+    .mainSection6 > .sectionContent > .introCopy > .s{font-size:15px !important;}
+    
+}

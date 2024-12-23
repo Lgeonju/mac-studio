@@ -6,7 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger) //플러그인 꼭 연결해줘야함 안하면 스크롤 트리거가 작동이 안됨
 
 function MainSection2(){
-
+  
     let buttonText = "M2 Max 및 M2 Ultra 심층 탐구";
 
     useGSAP(()=>{
@@ -30,7 +30,7 @@ function MainSection2(){
       ScrollTrigger.create({
         animation: con1_widthAni2,
         trigger: '.mainSection3',
-        start: 'bottom center',
+        start: '+=3800 center',
         end: "+=500",
         markers:false,
         scrub:true,
@@ -59,8 +59,8 @@ function MainSection2(){
         scrollTrigger: {
           trigger: ".mainSection2 .content .scrollAni",
           start: "-=20",
-          end:"+=1000",
-          markers:true,
+          end:"+=300",
+          markers:false,
           scrub:true,
         }
       });
@@ -69,12 +69,13 @@ function MainSection2(){
   
       /* 두번째 컨텐츠 스크롤 텍스트 애니 */
       const con2_scrollText = gsap.timeline();
-      con2_scrollText.from(".mainSection2 .content2 .scrollAni > .scrollText", {bottom:"-20%"})
+      con2_scrollText.from(".mainSection2 .content2 .scrollAni > .scrollText", {bottom:"-15%"})
   
       ScrollTrigger.create({
         animation: con2_scrollText,
         trigger: '.mainSection2 .content2 .scrollAni',
         start: 'top top',
+        end:"+=2000",
         pin:true,
         pinSpacing:true,
         markers:false,
@@ -87,8 +88,8 @@ function MainSection2(){
       let con2_textAni = gsap.timeline({
         scrollTrigger: {
           trigger: ".mainSection2 .content2 .scrollAni",
-          start: "top top",
-          end:"+=200",
+          start: "-=20",
+          end:"+=300",
           markers:false,
           scrub:true,
         }

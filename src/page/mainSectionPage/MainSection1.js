@@ -8,7 +8,23 @@ function MainSection1(){
 
     useGSAP(()=>{
 
-        const images = document.querySelectorAll('.imgAni > img');
+        // text 교체 애니
+        const main1_Text = document.querySelectorAll('.mainSection1 .mTextArea > p');
+  
+        let textAni = gsap.timeline({
+            scrollTrigger: {
+            trigger: ".mainSection1",
+            start: "+=200 top",
+            end:"+=1900",
+            markers:false, //가상으로 스크롤이벤트 범위를 보여줌
+            scrub:true,
+            }
+        });
+        textAni.to(main1_Text, {opacity:1, stagger:3, duration: 0.7});
+
+
+        // 맥이미지 교체 애니
+        const main1_Images = document.querySelectorAll('.mainSection1 .imgAni > img');
   
         let imagesAni = gsap.timeline({
             scrollTrigger: {
@@ -21,7 +37,7 @@ function MainSection1(){
             scrub:true,
             }
         });
-        imagesAni.to(images, {opacity:1, stagger:43, duration: 0.2});
+        imagesAni.to(main1_Images, {opacity:1, stagger:43, duration: 0.2});
     });
 
     return(
@@ -31,6 +47,8 @@ function MainSection1(){
                     <p className="s">Mac Studio</p>
                     <div className="mTextArea">
                         <p className="m">강력함의 집약체.</p>
+                        <p className="m">놀라운 콤팩트함.</p>
+                        <p className="m">빈틈없는 연결성.</p>
                     </div>
                 </div>
                 <div className="imgAni">
