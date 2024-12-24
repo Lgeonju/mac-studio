@@ -41,62 +41,125 @@ function MainSection2(){
       /* 첫번째 컨텐츠 스크롤 텍스트 애니 */
       const con1_scrollText = gsap.timeline();
       con1_scrollText.from(".mainSection2 .content .scrollAni > .scrollText", {bottom:"-15%"})
+      
+      ScrollTrigger.matchMedia({
+
+        "(min-width: 427px)": function() {
+          ScrollTrigger.create({
+            animation: con1_scrollText,
+            trigger: '.mainSection2 .content .scrollAni',
+            start: 'top top',
+            end:"+=2000",
+            pin:true,
+            pinSpacing:true,
+            markers:false,
+            scrub:true,
+          });
+
+          const con1_scrollText2 = document.querySelectorAll(".mainSection2 .content .scrollAni > .scrollText > li");
   
-      ScrollTrigger.create({
-        animation: con1_scrollText,
-        trigger: '.mainSection2 .content .scrollAni',
-        start: 'top top',
-        end:"+=2000",
-        pin:true,
-        pinSpacing:true,
-        markers:false,
-        scrub:true,
+          let con1_textAni = gsap.timeline({
+            scrollTrigger: {
+              trigger: ".mainSection2 .content .scrollAni",
+              start: "-=20",
+              end:"+=300",
+              markers:false,
+              scrub:true,
+            }
+          });
+          con1_textAni.from(con1_scrollText2, {opacity:0, stagger:5});
+      
+      
+          /* 두번째 컨텐츠 스크롤 텍스트 애니 */
+          const con2_scrollText = gsap.timeline();
+          con2_scrollText.from(".mainSection2 .content2 .scrollAni > .scrollText", {bottom:"-15%"})
+      
+          ScrollTrigger.create({
+            animation: con2_scrollText,
+            trigger: '.mainSection2 .content2 .scrollAni',
+            start: 'top top',
+            end:"+=2000",
+            pin:true,
+            pinSpacing:true,
+            markers:false,
+            scrub:true,
+          });
+      
+      
+          const con2_scrollText2 = document.querySelectorAll(".mainSection2 .content2 .scrollAni > .scrollText > li");
+      
+          let con2_textAni = gsap.timeline({
+            scrollTrigger: {
+              trigger: ".mainSection2 .content2 .scrollAni",
+              start: "-=20",
+              end:"+=300",
+              markers:false,
+              scrub:true,
+            }
+          });
+          con2_textAni.from(con2_scrollText2, {opacity:0, stagger:5});
+
+        },
+        "(max-width: 426px)": function() {
+          ScrollTrigger.create({
+            animation: con1_scrollText,
+            trigger: '.mainSection2 .content .scrollAni',
+            start: 'top top',
+            end:"bottom",
+            pin:true,
+            pinSpacing:true,
+            markers:false,
+            scrub:true,
+          });
+
+          const con1_scrollText2 = document.querySelectorAll(".mainSection2 .content .scrollAni > .scrollText > li");
+  
+          let con1_textAni = gsap.timeline({
+            scrollTrigger: {
+              trigger: ".mainSection2 .content .scrollAni",
+              start: "-=20",
+              end:"+=300",
+              markers:false,
+              scrub:true,
+            }
+          });
+          con1_textAni.from(con1_scrollText2, {opacity:0, stagger:5});
+      
+      
+          /* 두번째 컨텐츠 스크롤 텍스트 애니 */
+          const con2_scrollText = gsap.timeline();
+          con2_scrollText.from(".mainSection2 .content2 .scrollAni > .scrollText", {bottom:"-15%"})
+      
+          ScrollTrigger.create({
+            animation: con2_scrollText,
+            trigger: '.mainSection2 .content2 .scrollAni',
+            start: 'top top',
+            end:"bottom",
+            pin:true,
+            pinSpacing:true,
+            markers:false,
+            scrub:true,
+          });
+      
+      
+          const con2_scrollText2 = document.querySelectorAll(".mainSection2 .content2 .scrollAni > .scrollText > li");
+      
+          let con2_textAni = gsap.timeline({
+            scrollTrigger: {
+              trigger: ".mainSection2 .content2 .scrollAni",
+              start: "-=20",
+              end:"+=300",
+              markers:false,
+              scrub:true,
+            }
+          });
+          con2_textAni.from(con2_scrollText2, {opacity:0, stagger:5});
+
+        },
+        
+
       });
-  
-  
-      const con1_scrollText2 = document.querySelectorAll(".mainSection2 .content .scrollAni > .scrollText > li");
-  
-      let con1_textAni = gsap.timeline({
-        scrollTrigger: {
-          trigger: ".mainSection2 .content .scrollAni",
-          start: "-=20",
-          end:"+=300",
-          markers:false,
-          scrub:true,
-        }
-      });
-      con1_textAni.from(con1_scrollText2, {opacity:0, stagger:5});
-  
-  
-      /* 두번째 컨텐츠 스크롤 텍스트 애니 */
-      const con2_scrollText = gsap.timeline();
-      con2_scrollText.from(".mainSection2 .content2 .scrollAni > .scrollText", {bottom:"-15%"})
-  
-      ScrollTrigger.create({
-        animation: con2_scrollText,
-        trigger: '.mainSection2 .content2 .scrollAni',
-        start: 'top top',
-        end:"+=2000",
-        pin:true,
-        pinSpacing:true,
-        markers:false,
-        scrub:true,
-      });
-  
-  
-      const con2_scrollText2 = document.querySelectorAll(".mainSection2 .content2 .scrollAni > .scrollText > li");
-  
-      let con2_textAni = gsap.timeline({
-        scrollTrigger: {
-          trigger: ".mainSection2 .content2 .scrollAni",
-          start: "-=20",
-          end:"+=300",
-          markers:false,
-          scrub:true,
-        }
-      });
-      con2_textAni.from(con2_scrollText2, {opacity:0, stagger:5});
-  
+
     });
 
     return (
@@ -133,7 +196,7 @@ function MainSection2(){
                 </div>
 
                 <div className='videoWrap scrollAni'>
-                <video autoPlay muted loop>
+                <video autoPlay muted loop playsInline>
                     <source src={require('../../media/main.mp4')} type='video/mp4'/>
                 </video>
 
@@ -173,7 +236,7 @@ function MainSection2(){
                 </div>
 
                 <div className='videoWrap scrollAni'>
-                <video autoPlay muted loop>
+                <video autoPlay muted loop playsInline>
                     <source src={require('../../media/main2.mp4')} type='video/mp4'/>
                 </video>
 
