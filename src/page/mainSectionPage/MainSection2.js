@@ -110,6 +110,7 @@ function MainSection2(){
             pinSpacing:true,
             markers:false,
             scrub:true,
+            invalidateOnRefresh: true,
           });
 
           const con1_scrollText2 = document.querySelectorAll(".mainSection2 .content .scrollAni > .scrollText > li");
@@ -139,6 +140,7 @@ function MainSection2(){
             pinSpacing:true,
             markers:false,
             scrub:true,
+            invalidateOnRefresh: true,
           });
       
       

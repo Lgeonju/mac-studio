@@ -35,6 +35,7 @@ function MainSection1(){
             pinSpacing:true,
             markers:false, //가상으로 스크롤이벤트 범위를 보여줌
             scrub:true,
+            invalidateOnRefresh: true,
             }
         });
         imagesAni.to(main1_Images, {opacity:1, stagger:43, duration: 0.2});
