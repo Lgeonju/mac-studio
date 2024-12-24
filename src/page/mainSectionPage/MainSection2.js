@@ -24,6 +24,7 @@ function MainSection2(){
         }
       });
       
+      // width 좁아지는 애니
       const con1_widthAni2 = gsap.timeline();
       con1_widthAni2.from(".mainSection2 .widthAni2", {width:"200%"})
   

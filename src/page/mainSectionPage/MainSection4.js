@@ -8,6 +8,7 @@ function MainSection4(){
 
     useGSAP(()=>{
 
+        // 맥이미지 교체 애니
         const main4_Images = document.querySelectorAll('.mainSection4 .imgAni > img');
   
         let imagesAni2 = gsap.timeline({

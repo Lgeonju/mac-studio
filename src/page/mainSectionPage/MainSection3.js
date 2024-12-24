@@ -13,6 +13,7 @@ function MainSection3(){
         graphNum2:"3.6배"
       });
     
+      /* tab에 따른 타이틀 */
       let tabName = {
         tab1 : "더 빠른 OTOY Octane X 렌더링 성능",
         tab2 : "더 빠른 Topaz Video AI 비디오 업스케일링 성능",
