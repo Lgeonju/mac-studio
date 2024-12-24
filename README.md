@@ -36,17 +36,17 @@ MAC-STUDIO\
 │\
 ├─public\
 │  ├─css\
-│  │  ├─fonts               프로젝트 사용폰트\
-│  │  └─icons               프로젝트 웹폰트 아이콘\
+│  │  ├─fonts \
+│  │  └─icons \
 │  └─images\
-│      ├─hero               히어로섹션 애니용 이미지\
-│      └─xrayMac            섹션 애니용 이미지\
+│      ├─hero \
+│      └─xrayMac \
 │
 └─src\
-    ├─component             컴포넌트용 폴더 ex.Button\
-    ├─fragment              플래그먼트용 폴더 ex.Header\
-    ├─media                 동영상 폴더\
+    ├─component \
+    ├─fragment \
+    ├─media \
     ├─page\
-    │  └─mainSectionPage    메인섹션 요소 폴더 \
-    ├─main.js               메인Wrap JS \
-    └─scss                  각 페이지별 scss정의 폴더
+    │  └─mainSectionPage \
+    ├─main.js \
+    └─scss
