@@ -6,6 +6,9 @@
     .mainSection1 > .sectionContent > .introCopy{margin:0 0 20px !important;}
     .mainSection1 > .sectionContent > .imgAni{margin-bottom:0px !important;}
     .mainSection3 > .sectionContent > .content > .introLink > button{text-decoration: none !important;}
+
+    .mainSection4 > .sectionContent > .imgAni{height:330.74px !important;}
+    .mainSection4 > .sectionContent > .imgAni > img{width:95% !important;}
 }
 
 @media (max-width : 571px){
@@ -41,6 +44,7 @@
     .mainSection4 > .sectionContent{justify-content: center !important;}
     .mainSection4 > .sectionContent > .introCopy{margin:0 0 20px !important;}
     .mainSection4 > .sectionContent > .imgAni{height:218.08px !important;}
+    .mainSection4 > .sectionContent > .imgAni > img{width:100% !important;}
 
     .mainSection5 > .sectionContent > .introCopy{font-size:50px !important; margin-bottom:20px !important;}
     .mainSection5 > .sectionContent > .imgText{font-size:13px !important; margin-bottom:40px !important;}
@@ -86,7 +90,7 @@
     .mainSection4 > .sectionContent > .introCopy{font-size:40px !important;}
     .mainSection4 > .sectionContent > .imgAni{height:188.25px !important;}
 
-    .mainSection5 > .sectionContent{padding:0 20px !important;}
+    .mainSection5 > .sectionContent{margin:0 20px !important;}
     .mainSection5 > .sectionContent > .introCopy{font-size:40px !important; margin-bottom:20px !important;}
     .mainSection5 > .sectionContent > p{font-size:15px !important;}
 
